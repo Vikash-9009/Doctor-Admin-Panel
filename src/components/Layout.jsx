@@ -99,11 +99,11 @@ const Layout = ({ children }) => {
             label: 'Prescription',
             link: '/prescription'
         },
-        {
-            icon: 'fa-solid fa-arrow-right-from-bracket text-red-600',
-            label: 'Logout',
-            // link: '/logout'
-        },
+        // {
+        //     icon: 'fa-solid fa-arrow-right-from-bracket text-red-600',
+        //     label: 'Logout',
+        //     // link: '/logout'
+        // },
     ];
 
     const Dropdown = ({ data, dropList, setActive }) => {
@@ -127,7 +127,7 @@ const Layout = ({ children }) => {
     return (
         <div className='bg-[#E9E7EF] min-h-screen'>
             <aside
-                className='bg-white h-full fixed top-0 left-0 overflow-hidden'
+                className='bg-white h-full fixed top-0 left-0 overflow-hidden flex flex-col'
                 style={{
                     width: spacing,
                     transition: '.3s'
@@ -162,13 +162,21 @@ const Layout = ({ children }) => {
                                 transition: '0.3s'
                             }}
                         >
-                            <i className={`${items.icon} text-xl ${location.pathname === items.link ? null : 'text-[#006a60]'} group-hover:text-white`}></i>
+                            <i className={`${items.icon} text-xl ${location.pathname === items.link ? null : 'text-[#006a60]'} group-hover:text-white duration-300`}></i>
                             {spacing === 300 &&
                                 <label className='text-lg ml-3 cursor-pointer'>{items.label}</label>
                             }
                         </Link>
                     ))}
+
                 </div>
+
+                <button className={`mt-auto mx-6 mb-4 flex items-center ${spacing !== 300 && 'justify-center'} p-2 rounded hover:bg-red-600 hover:text-white group duration-300`}>
+                    <i className={`fa-solid fa-arrow-right-from-bracket text-red-600 text-xl  group-hover:text-white`}></i>
+                    {spacing === 300 &&
+                        <label className='text-lg ml-3 cursor-pointer'>Logout</label>
+                    }
+                </button>
 
             </aside>
 

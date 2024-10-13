@@ -89,21 +89,21 @@ const PatientAppointment = () => {
                                         <div className='flex flex-col'>
                                             <label className='text-lg font-medium text-left pb-2'>Name</label>
                                             <input
-                                                className="border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:outline-none transition duration-150 ease-in-out"
+                                                className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
                                                 type="text" placeholder='Your name'
                                             />
                                         </div>
                                         <div className='flex flex-col'>
                                             <label className='text-lg font-medium text-left pb-2'>Email</label>
                                             <input
-                                                className="border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:outline-none transition duration-150 ease-in-out"
+                                                className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
                                                 type="text" placeholder='Your email'
                                             />
                                         </div>
                                         <div className='flex flex-col'>
                                             <label className='text-lg font-medium text-left pb-2'>Phone</label>
                                             <input
-                                                className="border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:outline-none transition duration-150 ease-in-out"
+                                                className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
                                                 type="text" placeholder='Your number'
                                             />
                                         </div>

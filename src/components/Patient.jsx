@@ -67,7 +67,7 @@ const Patient = () => {
                 <div>
                     <div className='flex justify-between items-center p-1'>
                         <button
-                            className='rounded py-2 px-4 mb-4 text-xl font-medium flex gap-1 items-center text-white bg-[#006a60] hover:bg-rose-600 duration-200'
+                            className='rounded py-2 px-4 mb-4 text-xl font-medium flex gap-1 items-center text-white bg-[#006a60] hover:bg-rose-600 duration-300'
                             onClick={() => setAddEdit('Add')}
                         >
                             <i className="fa-solid fa-plus"></i>
@@ -112,21 +112,21 @@ const Patient = () => {
                                             <div className='flex flex-col'>
                                                 <label className='text-lg font-medium text-left pb-2'>Name</label>
                                                 <input
-                                                    className="border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:outline-none transition duration-150 ease-in-out"
+                                                    className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
                                                     type="text" placeholder='Your name'
                                                 />
                                             </div>
                                             <div className='flex flex-col'>
                                                 <label className='text-lg font-medium text-left pb-2'>Email</label>
                                                 <input
-                                                    className="border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:outline-none transition duration-150 ease-in-out"
+                                                    className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
                                                     type="text" placeholder='Your email'
                                                 />
                                             </div>
                                             <div className='flex flex-col'>
                                                 <label className='text-lg font-medium text-left pb-2'>Phone</label>
                                                 <input
-                                                    className="border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:outline-none transition duration-150 ease-in-out"
+                                                    className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
                                                     type="text" placeholder='Your number'
                                                 />
                                             </div>
@@ -188,7 +188,7 @@ const Patient = () => {
                                         </button>
 
                                         <button className='text-[#006a60] px-2 py-1 rounded bg-gray-200 hover:bg-[#006a60] hover:text-white duration-200'>
-                                            <i className="delete-icon fa-solid fa-trash-can"></i>
+                                            <i className="fa-solid fa-trash-can"></i>
                                         </button>
                                     </td>
                                 </tr>
