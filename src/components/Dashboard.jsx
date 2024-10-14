@@ -58,20 +58,20 @@ const Dashboard = () => {
 
     return (
         <Layout>
-            <div>
+            <div className='animate__animated animate__fadeIn animate__faster'>
                 <div className='flex justify-between items-center p-1 mb-2'>
-                    <span className='text-4xl font-bold pb-3'>Dashboard</span>
-                    <span className='mb-5 text-lg font-medium text-rose-600'>Dashboard</span>
+                    <span className='text-2xl md:text-4xl font-bold pb-3'>Dashboard</span>
+                    <span className='mb-5 md:text-lg font-medium text-rose-600'>Dashboard</span>
                 </div>
 
-                <div className='grid grid-cols-4 gap-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                     {dashboard.map((items, index) => (
                         <div key={index}
                             className='flex items-center justify-between font-medium h-20 p-2 rounded-md bg-white group'
                         >
                             <div>
-                                <div className='text-lg'>{items.title}</div>
-                                <div className='text-2xl'>{items.quantity}</div>
+                                <div className='md:text-lg'>{items.title}</div>
+                                <div className='text-xl md:text-2xl'>{items.quantity}</div>
                             </div>
                             <div className={`${items.bg} rounded-md p-1 w-[55px] h-[55px] flex justify-center items-center`}>
                                 <img src={`/images/${items.img}`} alt={items.img} className='group-hover:scale-x-[-1] transition duration-500' />
@@ -82,15 +82,15 @@ const Dashboard = () => {
 
                 <div className='grid grid-cols-12 mt-5 gap-4'>
 
-                    <div className='bg-white rounded-lg p-5 col-span-8 flex flex-col items-center justify-center text-2xl'>
+                    <div className='bg-white rounded-lg p-5 col-span-12 lg:col-span-8 flex flex-col items-center justify-center text-xl md:text-2xl'>
                         Monthly Registered Users
                         <img src="/images/bar.png" alt="bar.png" className='h-[350px]' />
                     </div>
 
-                    <div className='bg-white rounded-lg p-5 col-span-4 space-y-8'>
+                    <div className='bg-white rounded-lg p-5 col-span-12 md:col-span-8 lg:col-span-4 space-y-8'>
 
                         <div className='flex justify-between'>
-                            <span className='text-2xl w-24'>{duration} Earning</span>
+                            <span className='text-xl md:text-2xl w-24'>{duration} Earning</span>
                             <span className='border border-gray-300 rounded-lg p-1.5 h-fit'>
                                 <button
                                     className={`${duration === 'Weekly' ? 'bg-[#006a60] text-white' : null} rounded-lg p-2 transition duration-300`}
@@ -110,8 +110,8 @@ const Dashboard = () => {
                         <div className='flex justify-between items-center'>
                             <div className='flex flex-col gap-2'>
                                 <span className=''>This {duration.slice(0, -2)}</span>
-                                <span className='text-2xl font-medium'>${duration === 'Weekly' ? '29.5' : '229.655'}</span>
-                                <span className='text-xl w-56'>
+                                <span className='text-xl md:text-2xl font-medium'>${duration === 'Weekly' ? '29.5' : '229.655'}</span>
+                                <span className='md:text-xl w-56'>
                                     <span className='text-rose-600'>{duration === 'Weekly' ? '-31.08%' : '-81.08% '}</span> From Previous {duration.slice(0, -2)}
                                 </span>
                             </div>

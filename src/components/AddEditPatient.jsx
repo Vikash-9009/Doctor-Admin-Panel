@@ -3,25 +3,25 @@ import { Link } from 'react-router-dom';
 
 const AddEditPatient = ({ addEdit, setAddEdit }) => {
     return (
-        <div className=''>
+        <div className='animate__animated animate__fadeIn animate__faster'>
             <div className='flex justify-end items-center p-1'>
                 <div className='font-medium mb-5 space-x-2'>
-                    <Link to='/dashboard' className='text-lg hover:text-red-600 duration-200'>Dashboard</Link>
+                    <Link to='/dashboard' className='md:text-lg hover:text-red-600 duration-200'>Dashboard</Link>
                     <i className="fa-solid fa-chevron-right"></i>
 
-                    <span className='text-lg hover:text-red-600 duration-200 cursor-pointer' onClick={() => setAddEdit('')}>Patient</span>
+                    <span className='md:text-lg hover:text-red-600 duration-200 cursor-pointer' onClick={() => setAddEdit('')}>Patient</span>
                     <i className="fa-solid fa-chevron-right"></i>
 
-                    <span className='text-lg text-rose-600'>{addEdit} Patient</span>
+                    <span className='md:text-lg text-rose-600'>{addEdit} Patient</span>
                 </div>
             </div>
 
             <div className='py-6 px-8 w-full bg-white rounded-lg'>
-                <span className='text-2xl font-bold text-[#006a60]'>{addEdit} Patient</span>
+                <span className='text-xl md:text-2xl font-bold text-[#006a60]'>{addEdit} Patient</span>
 
-                <form className='my-3 mt-5 grid grid-cols-2 gap-6'>
+                <form className='my-3 mt-5 grid grid-cols-1 md:grid-cols-2 gap-6'>
                     <div>
-                        <label htmlFor='name' className='text-lg font-medium text-left'>
+                        <label htmlFor='name' className='md:text-lg font-medium text-left'>
                             Name <span className='text-red-600'>*</span>
                         </label>
 
@@ -29,17 +29,17 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='name'>
-                                <i class="fa-solid fa-user-nurse text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-solid fa-user-nurse md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
                             <input id='name'
-                                className="px-4 w-full text-lg border-none focus:outline-none rounded-lg"
+                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
                                 type="text" placeholder='Your name'
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor='email' className='text-lg font-medium text-left'>
+                        <label htmlFor='email' className='md:text-lg font-medium text-left'>
                             Email <span className='text-red-600'>*</span>
                         </label>
 
@@ -47,17 +47,17 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='email'>
-                                <i class="fa-regular fa-envelope text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-regular fa-envelope md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
                             <input id='email'
-                                className="px-4 w-full text-lg border-none focus:outline-none rounded-lg"
+                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
                                 type="email" placeholder='Your email'
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor='password' className='text-lg font-medium text-left'>
+                        <label htmlFor='password' className='md:text-lg font-medium text-left'>
                             Password <span className='text-red-600'>*</span>
                         </label>
 
@@ -65,17 +65,17 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='password'>
-                                <i class="fa-solid fa-key text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-solid fa-key md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
                             <input id='password'
-                                className="px-4 w-full text-lg border-none focus:outline-none rounded-lg"
+                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
                                 type="password" placeholder='***********'
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor='phone' className='text-lg font-medium text-left'>
+                        <label htmlFor='phone' className='md:text-lg font-medium text-left'>
                             Phone <span className='text-red-600'>*</span>
                         </label>
 
@@ -83,17 +83,17 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='phone'>
-                                <i class="fa-solid fa-phone-volume text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-solid fa-phone-volume md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
                             <input id='phone'
-                                className="px-4 w-full text-lg border-none focus:outline-none rounded-lg"
+                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
                                 type="text" placeholder='Your phone'
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor='gender' className='text-lg font-medium text-left'>
+                        <label htmlFor='gender' className='md:text-lg font-medium text-left'>
                             Gender <span className='text-red-600'>*</span>
                         </label>
 
@@ -101,9 +101,9 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='gender'>
-                                <i class="fa-solid fa-restroom text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-solid fa-restroom md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='gender' className="px-4 w-full text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='gender' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
                                 <option value="" className='text-gray-400' disabled selected>-Select-</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -113,7 +113,7 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                     </div>
 
                     <div>
-                        <label htmlFor='bloodGroup' className='text-lg font-medium text-left'>
+                        <label htmlFor='bloodGroup' className='md:text-lg font-medium text-left'>
                             Blood Group <span className='text-red-600'>*</span>
                         </label>
 
@@ -121,9 +121,9 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='bloodGroup'>
-                                <i class="fa-solid fa-heart-pulse text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-solid fa-heart-pulse md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='bloodGroup' className="px-4 w-full text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='bloodGroup' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
                                 <option value="" className='text-gray-400' disabled selected>-Select-</option>
                                 <option value="A+">A+</option>
                                 <option value="A-">A-</option>
@@ -138,7 +138,7 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                     </div>
 
                     <div>
-                        <label htmlFor='photo' className='text-lg font-medium text-left'>
+                        <label htmlFor='photo' className='md:text-lg font-medium text-left'>
                             Photo <span className='text-red-600'>*</span>
                         </label>
 
@@ -155,7 +155,7 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                     </div>
 
                     <div>
-                        <label htmlFor='address' className='text-lg font-medium text-left'>
+                        <label htmlFor='address' className='md:text-lg font-medium text-left'>
                             Address <span className='text-red-600'>*</span>
                         </label>
 
@@ -163,31 +163,31 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <textarea id='address'
-                                className="p-4 w-full text-lg border-none focus:outline-none rounded-lg"
+                                className="p-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
                                 type="text" placeholder='Address'
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor='dob' className='text-lg font-medium text-left'>
+                        <label htmlFor='dob' className='md:text-lg font-medium text-left'>
                             Date of birth <span className='text-red-600'>*</span>
                         </label>
 
                         <div
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
-                            <label htmlFor='dob'><i class="fa-regular fa-calendar-days text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                            <label htmlFor='dob'><i class="fa-regular fa-calendar-days md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
                             <input id='dob'
-                                className="px-4 w-full text-lg border-none focus:outline-none rounded-lg"
+                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
                                 type="date" placeholder='Your phone'
                             />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor='status' className='text-lg font-medium text-left'>
+                        <label htmlFor='status' className='md:text-lg font-medium text-left'>
                             Status <span className='text-red-600'>*</span>
                         </label>
 
@@ -195,9 +195,9 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             className='mt-1 flex items-center border border-gray-300 rounded-lg focus-within:border-[#006a60] duration-200'
                         >
                             <label htmlFor='status'>
-                                <i class="fa-regular fa-circle-check text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
+                                <i class="fa-regular fa-circle-check md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='status' className="px-4 w-full text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='status' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
                                 <option value="Active">Active</option>
                                 <option value="Inactive">Inactive</option>
                             </select>
@@ -206,12 +206,12 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
 
                     <div className='flex gap-4 py-3'>
                         <button
-                            className='rounded py-2 px-4 text-xl font-medium text-white bg-[#006a60] hover:bg-rose-600  duration-300'
+                            className='rounded py-2 px-4 text-lg md:text-xl font-medium text-white bg-[#006a60] hover:bg-rose-600  duration-300'
                         >
                             Submit
                         </button>
                         <button
-                            className='rounded py-2 px-4 text-xl font-medium border hover:text-white  hover:bg-[#006a60] duration-300'
+                            className='rounded py-2 px-4 text-lg md:text-xl font-medium border hover:text-white  hover:bg-[#006a60] duration-300'
                             onClick={() => setAddEdit('')}
                         >
                             Cancel
