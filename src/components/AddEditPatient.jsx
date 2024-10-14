@@ -103,7 +103,7 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             <label htmlFor='gender'>
                                 <i class="fa-solid fa-restroom md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='gender' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='gender' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer bg-white">
                                 <option value="" className='text-gray-400' disabled selected>-Select-</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -123,7 +123,7 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             <label htmlFor='bloodGroup'>
                                 <i class="fa-solid fa-heart-pulse md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='bloodGroup' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='bloodGroup' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer bg-white">
                                 <option value="" className='text-gray-400' disabled selected>-Select-</option>
                                 <option value="A+">A+</option>
                                 <option value="A-">A-</option>
@@ -197,7 +197,7 @@ const AddEditPatient = ({ addEdit, setAddEdit }) => {
                             <label htmlFor='status'>
                                 <i class="fa-regular fa-circle-check md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='status' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='status' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer bg-white">
                                 <option value="Active">Active</option>
                                 <option value="Inactive">Inactive</option>
                             </select>

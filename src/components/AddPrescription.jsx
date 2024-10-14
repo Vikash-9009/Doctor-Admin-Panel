@@ -32,7 +32,7 @@ const AddPrescription = ({ setAddPrescription }) => {
                             <label htmlFor='patient'>
                                 <i class="fa-solid fa-user-doctor md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
-                            <select id='patient' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer">
+                            <select id='patient' className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg cursor-pointer bg-white">
                                 <option value="" className='text-gray-400' disabled selected>-Select-</option>
                                 <option value="Mr Patient">Mr Patient</option>
                                 <option value="Mr Patient">Mr Patient</option>
@@ -53,7 +53,7 @@ const AddPrescription = ({ setAddPrescription }) => {
                             <label htmlFor='date'><i class="fa-regular fa-calendar-days md:text-lg text-[#006a60] bg-[#f2f7f7] px-4 py-3 rounded-s-lg"></i>
                             </label>
                             <input id='date'
-                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg"
+                                className="px-4 w-full md:text-lg border-none focus:outline-none rounded-lg bg-white"
                                 type="date" placeholder='Prescription Date *'
                             />
                         </div>

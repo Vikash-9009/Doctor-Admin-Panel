@@ -71,47 +71,44 @@ const Device = () => {
                                 </button>
                             </div>
 
-                            {show &&
-                                <div className='py-4'>
-                                    <hr />
-                                    <div className='px-3 py-4'>
-                                        <div className='grid grid-cols-3 gap-10 py-2'>
-                                            <div className='flex flex-col'>
-                                                <label className='md:text-lg font-medium text-left pb-2'>Name</label>
-                                                <input
-                                                    className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
-                                                    type="text" placeholder='Your name'
-                                                />
-                                            </div>
-                                            <div className='flex flex-col'>
-                                                <label className='md:text-lg font-medium text-left pb-2'>Email</label>
-                                                <input
-                                                    className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
-                                                    type="text" placeholder='Your email'
-                                                />
-                                            </div>
-                                            <div className='flex flex-col'>
-                                                <label className='md:text-lg font-medium text-left pb-2'>Phone</label>
-                                                <input
-                                                    className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
-                                                    type="text" placeholder='Your number'
-                                                />
-                                            </div>
+                            <div className={`${show ? 'max-h-screen opacity-100 pt-4' : 'max-h-0 opacity-0'} transition-all duration-500 overflow-hidden`}>                                    <hr />
+                                <div className='px-3 py-4'>
+                                    <div className='grid grid-cols-3 gap-10 py-2'>
+                                        <div className='flex flex-col'>
+                                            <label className='md:text-lg font-medium text-left pb-2'>Name</label>
+                                            <input
+                                                className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
+                                                type="text" placeholder='Your name'
+                                            />
                                         </div>
-                                        <button
-                                            className='rounded py-2 px-4 my-6 text-lg md:text-xl font-medium float-start text-white bg-[#006a60] hover:bg-rose-600 duration-300'
-                                        >
-                                            Submit
-                                        </button>
+                                        <div className='flex flex-col'>
+                                            <label className='md:text-lg font-medium text-left pb-2'>Email</label>
+                                            <input
+                                                className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
+                                                type="text" placeholder='Your email'
+                                            />
+                                        </div>
+                                        <div className='flex flex-col'>
+                                            <label className='md:text-lg font-medium text-left pb-2'>Phone</label>
+                                            <input
+                                                className="border border-gray-300 rounded-lg p-3 focus:border-[#006a60] focus:outline-none transition duration-150 ease-in-out"
+                                                type="text" placeholder='Your number'
+                                            />
+                                        </div>
                                     </div>
+                                    <button
+                                        className='rounded py-2 px-4 my-6 text-lg md:text-xl font-medium float-start text-white bg-[#006a60] hover:bg-rose-600 duration-300'
+                                    >
+                                        Submit
+                                    </button>
                                 </div>
-                            }
+                            </div>
                         </caption>
 
                         <tbody>
                             <tr className='bg-[#dcdfe9] text-left'>
                                 <th className='py-3 ps-4 md:text-lg'>Device Name</th>
-                                <th className='py-3 md:text-lg'>Waranty Date</th>
+                                <th className='py-3 md:text-lg'>Warranty Date</th>
                                 <th className='py-3 md:text-lg'>Purchase Date</th>
                                 <th className='py-3 md:text-lg  text-center'>Device Control</th>
                                 <th className='py-3 md:text-lg text-center'>Actions</th>

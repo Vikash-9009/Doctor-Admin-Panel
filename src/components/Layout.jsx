@@ -104,7 +104,7 @@ const Layout = ({ children }) => {
     const Dropdown = ({ data, dropList, setActive }) => {
         return (
             dropList &&
-            <div className='border border-gray-300 absolute bg-white top-10 rounded-lg right-0 flex flex-col animate__animated animate__fadeIn animate__faster'>
+            <div className='border border-gray-300 absolute bg-white top-10 rounded-lg right-0 flex flex-col z-[3] animate__animated animate__fadeIn animate__faster'>
                 {data.map((items, index) =>
                     <button
                         onClick={() => setActive(index)}
