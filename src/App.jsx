@@ -1,7 +1,6 @@
 import React from 'react';
 import 'animate.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Device from './components/Device';
 import Doctor from './components/Doctor';
@@ -16,7 +15,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/' element={<Navigate to='/dashboard' />} />
                 <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/device' element={<Device />} />
                 <Route path='/doctor' element={<Doctor />} />
