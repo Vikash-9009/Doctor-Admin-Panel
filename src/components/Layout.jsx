@@ -101,13 +101,19 @@ const Layout = ({ children }) => {
         },
     ];
 
-    const Dropdown = ({ data, dropList, setActive }) => {
+    const Dropdown = ({ data, dropList, closeList, setActive }) => {
+
+        const labelClick = (index) => {
+            setActive(index)
+            closeList(!dropList)
+        };
+
         return (
             dropList &&
             <div className='border border-gray-300 absolute bg-white top-10 rounded-lg right-0 flex flex-col z-[3] animate__animated animate__fadeIn animate__faster'>
                 {data.map((items, index) =>
                     <button
-                        onClick={() => setActive(index)}
+                        onClick={() => labelClick(index)}
                         className='px-4 py-2 hover:bg-gray-100 hover:font-semibold duration-200 whitespace-nowrap'
                         key={index}
                     >
@@ -205,7 +211,7 @@ const Layout = ({ children }) => {
                                 <i className={`fa-solid fa-caret-down ms-2 ${easeDropList && 'rotate-180'} duration-200`}></i>
 
                             </button>
-                            <Dropdown data={healthEase} setActive={setActiveEase} dropList={easeDropList} />
+                            <Dropdown data={healthEase} dropList={easeDropList} closeList={setEaseDropList} setActive={setActiveEase} />
                         </div>
 
                         <div className='relative'>
@@ -217,7 +223,7 @@ const Layout = ({ children }) => {
                                 <i className={`fa-solid fa-caret-down ms-2 ${patientDropList && 'rotate-180'} duration-200`}></i>
 
                             </button>
-                            <Dropdown data={patient} setActive={setActivePatient} dropList={patientDropList} />
+                            <Dropdown data={patient} dropList={patientDropList} closeList={setPatientDropList} setActive={setActivePatient} />
                         </div>
 
                         <div className='relative'>
@@ -234,7 +240,7 @@ const Layout = ({ children }) => {
 
                             </button>
 
-                            <Dropdown data={countries} setActive={setActiveFlag} dropList={flagDropList} />
+                            <Dropdown data={countries} dropList={flagDropList} closeList={setFlagDropList} setActive={setActiveFlag} />
                         </div>
                     </div>
                 </nav>
